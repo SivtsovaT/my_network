@@ -1,0 +1,9 @@
+.content {
+    grid-area: c;
+    background-color: cornflowerblue;
+}
+
+.ava {
+    display: block;
+    width: 150px;
+}
