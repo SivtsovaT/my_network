@@ -10,7 +10,6 @@ import Dialogs from "./components/Dialogs/Dialogs";
 
 const App = () => {
 
-
             return (
                 <BrowserRouter>
                     <div className='app-booker'>
