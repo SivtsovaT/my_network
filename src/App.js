@@ -17,9 +17,10 @@ const App = (props) => {
                 <Navbar/>
                 <div class='app-booker-content'>
                     <Routes>
-                        <Route path="/profile" element={<Profile postsData={props.postsData}/>}/>
+                        <Route path="/profile" element={<Profile postsData={props.state.profilePage.posts}/>}/>
                         <Route path="/dialogs"
-                               element={<Dialogs dialogsData={props.dialogsData} messagesData={props.messagesData}/>}/>
+                               element={<Dialogs dialogsData={props.state.dialogsPage.dialogs}
+                                                 messagesData={props.state.dialogsPage.messages}/>}/>
                     </Routes>
                 </div>
             </div>
