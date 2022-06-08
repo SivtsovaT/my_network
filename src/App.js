@@ -8,23 +8,25 @@ import Profile from "./components/Profile/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
 
 
-const App = () => {
+const App = (props) => {
 
-            return (
-                <BrowserRouter>
-                    <div className='app-booker'>
-                        <Header/>
-                        <Navbar/>
-                        <div class='app-booker-content'>
-                            <Routes>
-                                <Route path="/profile" element={<Profile/>}/>
-                                <Route path="/dialogs" element= {<Dialogs/>}/>
-                            </Routes>
-                        </div>
+
+
+        return (
+            <BrowserRouter>
+                <div className='app-booker'>
+                    <Header/>
+                    <Navbar/>
+                    <div class='app-booker-content'>
+                        <Routes>
+                            <Route path="/profile" element={<Profile postsData={props.postsData}/>}/>
+                            <Route path="/dialogs" element= {<Dialogs/>}/>
+                        </Routes>
                     </div>
-                </BrowserRouter>
+                </div>
+            </BrowserRouter>
 
-    )
+)
 }
 
 export default App;

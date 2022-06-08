@@ -2,14 +2,9 @@ import React from "react";
 import Post from "./Post/Post";
 import './MyPosts.css';
 
-const MyPosts = () => {
+const MyPosts = (props) => {
 
-	let postsData = [
-		{id:1, message: 'Hello!! ', likesCount: 12},
-		{id:2, message: 'it is my first post ', likesCount: 0},
-	]
-
-	let posts = postsData.map((everyPost) => {
+	let posts = props.postsData.map((everyPost) => {
 		return (
 			<Post message={everyPost.message} likesCount={everyPost.likesCount}/>
 		)
@@ -31,3 +26,4 @@ const MyPosts = () => {
 }
 
 export default MyPosts;
+
