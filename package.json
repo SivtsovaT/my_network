@@ -7,7 +7,8 @@
     "react-dom": "^18.1.0",
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "0.9.5"
+    "react-scripts": "0.9.5",
+    "serviceworker": "^0.1.7"
   },
   "devDependencies": {},
   "scripts": {

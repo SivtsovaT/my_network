@@ -15,9 +15,11 @@ const App = (props) => {
             <div className='app-booker'>
                 <Header/>
                 <Navbar/>
-                <div class='app-booker-content'>
+                <div className='app-booker-content'>
                     <Routes>
-                        <Route path="/profile" element={<Profile postsData={props.state.profilePage.posts}/>}/>
+                        <Route path="/profile" element={<Profile postsData={props.state.profilePage.posts}
+                                                                 addPost={props.addPost}
+                        />}/>
                         <Route path="/dialogs"
                                element={<Dialogs dialogsData={props.state.dialogsPage.dialogs}
                                                  messagesData={props.state.dialogsPage.messages}/>}/>
